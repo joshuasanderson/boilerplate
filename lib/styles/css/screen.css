@@ -1,0 +1,288 @@
+/* Imports */
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+/* line 5, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 30, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 33, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 36, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 39, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 14, ../sass/_responsive-grid.scss */
+[class*='grid-'] {
+  float: left;
+  padding: 10px;
+}
+
+/* line 20, ../sass/_responsive-grid.scss */
+[class*='grid-']:last-of-type {
+  padding-right: 10px;
+  float: right;
+}
+
+/* Base grid sizes, full desktop.
+===============================*/
+/* line 27, ../sass/_responsive-grid.scss */
+.grid-1 {
+  width: 100%;
+}
+
+/* line 30, ../sass/_responsive-grid.scss */
+.grid-2 {
+  width: 50%;
+}
+
+/* line 33, ../sass/_responsive-grid.scss */
+.grid-3 {
+  width: 33.33%;
+}
+
+/* line 36, ../sass/_responsive-grid.scss */
+.grid-4 {
+  width: 25%;
+}
+
+/* line 39, ../sass/_responsive-grid.scss */
+.grid-5 {
+  width: 20%;
+}
+
+/* line 42, ../sass/_responsive-grid.scss */
+.grid-6 {
+  width: 16.6666666667%;
+}
+
+/* line 45, ../sass/_responsive-grid.scss */
+.grid-7 {
+  width: 14.2857142857%;
+}
+
+/* line 48, ../sass/_responsive-grid.scss */
+.grid-8 {
+  width: 12.5%;
+}
+
+/* line 51, ../sass/_responsive-grid.scss */
+.grid-9 {
+  width: 11.1111111111%;
+}
+
+/* line 54, ../sass/_responsive-grid.scss */
+.grid-10 {
+  width: 10%;
+}
+
+/* line 57, ../sass/_responsive-grid.scss */
+.grid-11 {
+  width: 9.09090909091%;
+}
+
+/* line 60, ../sass/_responsive-grid.scss */
+.grid-12 {
+  width: 8.33%;
+}
+
+/* Very large screens.
+===============================*/
+@media only screen and (max-width: 1200px) {
+  /* line 67, ../sass/_responsive-grid.scss */
+  .grid-6 {
+    width: 33.33%;
+  }
+
+  /* line 71, ../sass/_responsive-grid.scss */
+  .grid-5,
+  .grid-7,
+  .grid-9,
+  .grid-11 {
+    width: 100%;
+  }
+}
+/* Medium devices, smaller desktops windows.
+============================================*/
+@media only screen and (max-width: 992px) {
+  /* line 82, ../sass/_responsive-grid.scss */
+  .grid-4 {
+    width: 50%;
+  }
+
+  /* line 86, ../sass/_responsive-grid.scss */
+  .grid-6 {
+    width: 33.33%;
+  }
+
+  /* line 90, ../sass/_responsive-grid.scss */
+  .grid-5,
+  .grid-7,
+  .grid-9,
+  .grid-11 {
+    width: 100%;
+  }
+}
+/* Small devices, tablets
+===============================*/
+@media only screen and (max-width: 768px) {
+  /* line 101, ../sass/_responsive-grid.scss */
+  .grid-3,
+  .grid-5,
+  .grid-7,
+  .grid-9,
+  .grid-11 {
+    width: 100%;
+  }
+
+  /* line 109, ../sass/_responsive-grid.scss */
+  .grid-4 {
+    width: 50%;
+  }
+
+  /* line 113, ../sass/_responsive-grid.scss */
+  .grid-6 {
+    width: 33.33%;
+  }
+}
+/* Extra small devices, phones
+===============================*/
+@media only screen and (max-width: 480px) {
+  /* line 121, ../sass/_responsive-grid.scss */
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6,
+  .grid-7,
+  .grid-8,
+  .grid-9,
+  .grid-10,
+  .grid-11,
+  .grid-12 {
+    width: 100%;
+  }
+}
+/* line 7, ../sass/screen.scss */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 19, ../sass/screen.scss */
+BODY {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/*
+    The container class will be our base div that encompasses all parts of the layout.
+*/
+/* line 29, ../sass/screen.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 35, ../sass/screen.scss */
+h1, h2, h3, h4 {
+  color: #231f20;
+}
+
+/* line 39, ../sass/screen.scss */
+h1 {
+  font-size: 2.3em;
+}
+
+/* line 43, ../sass/screen.scss */
+h2 {
+  font-size: 1.75em;
+}
+
+/* line 47, ../sass/screen.scss */
+h3 {
+  font-size: 1.25em;
+}
+
+/* line 51, ../sass/screen.scss */
+h4 {
+  font-size: .95em;
+}
+
+/* line 55, ../sass/screen.scss */
+img {
+  width: 100%;
+  border: none;
+}
+
+/* line 60, ../sass/screen.scss */
+.left {
+  float: left;
+}
+
+/* line 64, ../sass/screen.scss */
+.right {
+  float: right;
+}
+
+/* line 68, ../sass/screen.scss */
+.center {
+  text-align: center;
+}

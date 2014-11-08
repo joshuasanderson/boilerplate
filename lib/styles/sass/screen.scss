@@ -1,0 +1,70 @@
+/* Imports */
+
+@import "base";
+@import "reset";
+@import "responsive-grid";
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+
+   // Removes weird padding behavior on widths.
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+BODY {
+	padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/*
+    The container class will be our base div that encompasses all parts of the layout.
+*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    color: $dark-grey;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: .95em;
+}
+
+img {
+    width: 100%;
+    border: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
